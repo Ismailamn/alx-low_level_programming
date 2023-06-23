@@ -7,10 +7,19 @@
 
 int main(void)
 {
-	int i;
+	int month;
+	int day;
+	int year;
 
-	i = 0;
-	positive_or_negative(i);
+	month = 4;
+	day = 10;
+	year = 1997;
+
+	printf("Date: %02d/%02d/%04d\n", month, day, year);
+
+	day = convert_day(month, day);
+
+	print_remaining_days(month, day, year);
 
 	return (0);
 }
